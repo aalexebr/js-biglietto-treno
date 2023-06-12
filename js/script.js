@@ -5,9 +5,10 @@ const km = parseInt(userKm)
 const age = parseInt(userAge)
 
 let totPrice = km * 0.1
+totPrice.toFixed(2)
 
 
-if (age <= 18) {
+if (age < 18) {
     totPrice = totPrice - (totPrice * 0.2)
 }
 if (age >= 65) {
