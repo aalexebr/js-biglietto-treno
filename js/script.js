@@ -4,7 +4,7 @@ const userAge = prompt ("insert age");
 const km = parseInt(userKm)
 const age = parseInt(userAge)
 
-let totPrice = km * 0.1
+let totPrice = km * 0.21
 totPrice.toFixed(2)
 
 
