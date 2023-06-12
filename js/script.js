@@ -38,7 +38,9 @@ function add()
                 priceTable = priceTable - (priceTable * 0.4)
             }
            priceTable2 = priceTable.toFixed(2)
-        
-           
            document.getElementById('answer').innerHTML = priceTable2 + "$"
+           if (isNaN(priceTable2)){
+           
+            document.getElementById('answer').innerHTML = "retard*2"
+        }
          }
