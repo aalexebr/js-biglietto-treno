@@ -5,8 +5,6 @@ const km = parseInt(userKm)
 const age = parseInt(userAge)
 
 let totPrice = km * 0.21
-totPrice.toFixed(2)
-
 
 if (age < 18) {
     totPrice = totPrice - (totPrice * 0.2)
@@ -15,6 +13,7 @@ if (age >= 65) {
     totPrice = totPrice - (totPrice * 0.4)
 }
 
-document.getElementById('total').innerHTML += "" + totPrice + "£"
+let totPriceTwoDecimals = totPrice.toFixed(2)
+console.log('price', totPrice, "price with 2 decimals" , totPriceTwoDecimals)
+document.getElementById('total').innerHTML += "" + totPriceTwoDecimals + "£"
 
-console.log('price', totPrice)
