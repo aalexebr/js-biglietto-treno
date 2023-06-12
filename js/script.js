@@ -25,7 +25,7 @@ if (isNaN(userAge || userKm)){
 
 //  table
 
-function add()
+function calc()
          {
            let number1, number2, priceTable, priceTable2;
            number1 = parseInt(document.getElementById("firstnumber").value);
