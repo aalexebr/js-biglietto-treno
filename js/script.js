@@ -17,3 +17,7 @@ let totPriceTwoDecimals = totPrice.toFixed(2)
 console.log('price', totPrice, "price with 2 decimals" , totPriceTwoDecimals)
 document.getElementById('total').innerHTML += "" + totPriceTwoDecimals + "£"
 
+if (isNaN(userAge || userKm)){
+    alert ("retard")
+    document.getElementById('total').innerHTML = "retard"
+}
